@@ -1,0 +1,277 @@
+@import url('support.css');
+/*
+    Current Code
+=================================================*/
+
+/* SignIn 
+-------------------------------------------------*/
+:root {
+    /* sizes 
+    -----------*/
+    --input-padding-x: .75rem;
+    --input-padding-y: .75rem;
+    
+    /* colors 
+    -----------*/
+    --checkbox: #a5a5a5;
+    --form-btn-color: #19282f;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    --bg-color: #f5f5f5;
+    background-color: var(--bg-color);
+}
+.signin-top {
+    margin-top: -40px !important;
+}
+.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-control:focus {
+    --brand-color-alpha: rgba(40, 62, 74, 0.1);
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--brand-color);
+    outline: 0;
+    /* box-shadow: 0 0 0 0.12rem var(--brand-color-alpha); */
+    box-shadow: none;
+}
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+.times-x-end {
+    position: relative;
+    left: 375px;
+    right: 0;
+    cursor: pointer;
+}/*-- end --*/
+
+.shd {
+    --color: #d7d7d7;
+    position: relative;
+    width: 1%;
+    background-color: var(--color);
+    border: 1px solid var(--color);
+    height: 40px;
+    margin: 5px 0 0 0;
+    display: inline-block;
+    left: -1.7%;
+}
+.p_txt {
+    padding: 5px 0 14px 0;
+}
+.km {
+    margin: 0 0 5px 0;
+    font-size: .8rem;
+    color: #666;
+    width: 100%;
+}
+.partial-reg-form {
+    background: none repeat scroll 0 0 #fff;
+    padding: 14px 14px 24px;
+    font-size: .9rem;
+}
+.form-btn {
+    background: var(--form-btn-color);
+    color: var(--navbar-text-color);
+}
+
+/* floats and clearfixes
+----------------------------------------*/
+
+.flt-left {
+    float: left;
+}
+.flt-right {
+    float: right;
+}
+.clear-right {
+    clear: right;
+}
+.clear-both {
+    clear: both;
+}
+
+/* Register 
+-------------------------------------------------*/
+.registr-top {
+    margin-top: 0px !important;
+}
+.emb-show-pass {
+    top: -40px;
+    left: -14px;
+    position: relative;
+    float: right;
+    height: 0;
+}
+.check-box > label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+.textbox label {
+    color: #333;
+    font-size: 13px;
+    display: inline-block;
+    padding-bottom: 8px !important;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.check-box { 
+    display: block;
+    position: relative;
+    bottom: 30px;
+}
+.check-box ul {
+    padding: 0 !important;
+}
+
+.check-box ul {
+    list-style: none outside none;
+    padding: 15px 0;
+    color: #333;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.check-box.check-med li {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 0 0 10px;
+}
+.check-box {
+    background-position: -241px -121px;
+} 
+.check-off:hover {
+    background-position: -266px -121px;
+}
+.check-on:checked::after {
+    background-position: -291px -121px;
+}
+.check-input {
+    display: none;
+} 
+.gspr {
+    display: block;
+    background-image: url('../../images/sprites/sprds3_18.png') !important;
+}
+.check-box .gspr {
+    clear: left;
+    float: left;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+.check-box .check-lb {
+    margin-left: 30px !important;
+    display: table;
+}
+.check-box .check-lb {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.credential .check-lb {
+    --lb-color: #737872;
+    color(--lb-color);
+    font-size: 12px;
+}
+.gh-ar-hdn {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.g-hdn, .gh-ar-hdn {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.font-bold {
+    color: #222;
+    font-weight: 500;
+}
+/* inputs 
+-----------------------------------------*/

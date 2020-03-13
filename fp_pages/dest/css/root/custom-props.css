@@ -1,0 +1,55 @@
+:root {
+    --font-size: 62.5%;
+    /* Colors */
+    --brand-bg-color: #283e4a;
+    --brand-color: var(--brand-bg-color);
+    --section-bg: var(--white, #fff);
+    --page-bg: #F5F5F5;
+    --gray-link: #C7D1D8;
+    --navbar-text-color: var(--gray-link) !important;
+    --navbar-link-hover: #fff !important;
+    --text-color: #212529;
+    --bord: #bbb;
+    /* Measures and Units */
+    --gap: 15px;
+    /* same as gutter */
+    --inner: 20px;
+    /* padding */
+    --outer: 15px;
+    /* margin */
+    --auto: auto;
+    --val: var(--val);
+    /* same as : initial */
+    --arg: var(--arg);
+    /* same as : initial */
+    --argX: var(--arg, );
+    --argY: var(--arg, );
+    --align: var(--align);
+    /* same as : initial; */
+    --alignX: var(--align, );
+    --alignY: var(--align, );
+    /* Base Size */
+    --device-width: 100vw;
+    --full-width: 100%;
+    --size: initial;
+    --sizeX: var(--size, );
+    --sizeY: var(--size, );
+    --radius: 10px;
+    --bdr-radius: 0 5px 5px 0;
+    /* for callouts */
+    --style: solid #666;
+    /* Action */
+    --moveX: var(--arg, );
+    --moveY: var(--arg, );
+    /* Position */
+    --relt: relative;
+    --absl: absolute;
+    /* z-index */
+    --z-sticky: 1020 !default;
+    --z-fixed: 1030 !default;
+    /* 
+        Background image (Parallax)
+    --------------------------------------------*/
+    --position: center center/cover no-repeat;
+    --parallax: center center/cover no-repeat fixed;
+}
